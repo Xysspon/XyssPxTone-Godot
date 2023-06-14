@@ -1,0 +1,20 @@
+# C/C++ generated
+*.a
+*.ax
+*.d
+*.dll
+*.lib
+*.lo
+*.o
+*.os
+*.ox
+*.obj
+*.Plo
+*.so
+
+# Python generated
+__pycache__/
+*.pyc
+
+# Doxygen
+doxygen/
