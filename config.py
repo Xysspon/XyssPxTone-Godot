@@ -1,4 +1,6 @@
 def can_build(env, platform):
+    if env["module_vorbis_enabled"]:
+        env.module_add_dependencies("pxtone", ["vorbis", "ogg"])
     return True
 
 

@@ -5,8 +5,14 @@ Import("env_modules")
 
 env_pxtone = env_modules.Clone()
 
+if env["module_vorbis_enabled"]:
+    env_pxtone.Append(CPPDEFINES=["pxINCLUDE_OGGVORBIS"])
 
-# env_pxtone.Append(CPPDEFINES=["pxINCLUDE_OGGVORBIS"])
+    if env["builtin_libvorbis"]:
+        env_pxtone.Prepend(CPPPATH=["#thirdparty/libvorbis"])
+
+    if env["builtin_libogg"]:
+        env_pxtone.Prepend(CPPPATH=["#thirdparty/libogg"])
 
 module_obj = []
 env_pxtone_lib = env_pxtone.Clone()
@@ -15,4 +21,3 @@ env_pxtone_lib.add_source_files(module_obj, "pxtone/*.cpp")
 
 env_pxtone.add_source_files(module_obj, "*.cpp")
 env.modules_sources += module_obj
-
