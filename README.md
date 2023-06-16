@@ -6,7 +6,7 @@ This is a module for [Godot Engine](https://godotengine.org/) that allows you to
 
 You need to compile Godot from source to use this module.
 
-1. [Set your system up for compiling Godot based on their guides.](https://docs.godotengine.org/en/stable/development/compiling/index.html){ target="_blank" }
+1. [Set your system up for compiling Godot based on their guides.](https://docs.godotengine.org/en/stable/development/compiling/index.html)
 
 2. Clone or download source code of this repository into the `modules/` directory of the Godot source code tree.
 
