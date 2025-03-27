@@ -1,9 +1,9 @@
 /*************************************************************************/
 /*  audio_stream_pxtone.h                                                */
 /*************************************************************************/
-/* Copyright (c) 2007-2022 Juan Linietsky, Ariel Manzur.                 */
-/* Copyright (c) 2014-2022 Godot Engine contributors (cf. AUTHORS.md).   */
-/* Copyright (c) 2022-2023 Laura K. (alula)                              */
+/* Copyright (c) 2007-2025 Juan Linietsky, Ariel Manzur.                 */
+/* Copyright (c) 2014-2025 Godot Engine contributors (cf. AUTHORS.md).   */
+/* Copyright (c) 2022-2025 Alula, Xysspon LLC                            */
 /*                                                                       */
 /* Permission is hereby granted, free of charge, to any person obtaining */
 /* a copy of this software and associated documentation files (the       */

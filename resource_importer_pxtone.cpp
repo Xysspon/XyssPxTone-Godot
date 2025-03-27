@@ -1,9 +1,9 @@
 /*************************************************************************/
 /*  resource_importer_pxtone.cpp                                         */
 /*************************************************************************/
-/* Copyright (c) 2007-2022 Juan Linietsky, Ariel Manzur.                 */
-/* Copyright (c) 2014-2022 Godot Engine contributors (cf. AUTHORS.md).   */
-/* Copyright (c) 2022-2023 Laura K. (alula)                              */
+/* Copyright (c) 2007-2025 Juan Linietsky, Ariel Manzur.                 */
+/* Copyright (c) 2014-2025 Godot Engine contributors (cf. AUTHORS.md).   */
+/* Copyright (c) 2022-2025 Alula, Xysspon LLC                            */
 /*                                                                       */
 /* Permission is hereby granted, free of charge, to any person obtaining */
 /* a copy of this software and associated documentation files (the       */
@@ -69,7 +69,7 @@ void ResourceImporterPxTone::get_import_options(const String &p_path, List<Impor
 	r_options->push_back(ImportOption(PropertyInfo(Variant::FLOAT, "loop_offset"), 0));
 }
 
-Error ResourceImporterPxTone::import(const String &p_source_file, const String &p_save_path, const HashMap<StringName, Variant> &p_options, List<String> *r_platform_variants, List<String> *r_gen_files, Variant *r_metadata) {
+Error ResourceImporterPxTone::import(ResourceUID::ID p_source_id, const String &p_source_file, const String &p_save_path, const HashMap<StringName, Variant> &p_options, List<String> *r_platform_variants, List<String> *r_gen_files, Variant *r_metadata) {
 	bool loop = p_options["loop"];
 	float loop_offset = p_options["loop_offset"];
 
